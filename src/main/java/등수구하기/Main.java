@@ -45,19 +45,19 @@ public class Main {
 
         int[] resArr = new int[inputArray.length];
 
-        for(int i = 0; i < tmpList.size(); i++){
-            for(int j = 0; j < inputArray.length; j++){
-                if(tmpList.get(i) == inputArray[j]){
+        for (int i = 0; i < tmpList.size(); i++) {
+            for (int j = 0; j < inputArray.length; j++) {
+                if (tmpList.get(i) == inputArray[j]) {
                     resArr[j] = i + 1;
                 }
             }
         }
 
-        for(int i = 0; i < resArr.length; i++){
-            if(i == 0){
-                res = resArr[i]+"";
-            }else{
-                res = res+  " " + resArr[i];
+        for (int i = 0; i < resArr.length; i++) {
+            if (i == 0) {
+                res = resArr[i] + "";
+            } else {
+                res = res + " " + resArr[i];
             }
         }
 
